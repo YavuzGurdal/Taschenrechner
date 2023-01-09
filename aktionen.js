@@ -39,6 +39,9 @@ const getOperator = (e) => {
 }
 
 const calculate = () => {
+    if (!operator) return
+    if (!secondValue) return
+
     let first = parseFloat(firstValue.replace(",", "."))
     let second = parseFloat(secondValue.replace(",", "."))
 
