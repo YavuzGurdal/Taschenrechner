@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+html {
+    background: #82AAE3;
+}
+
+body {
+    font-size: 18px;
+    line-height: 20px;
+
+    display: grid;
+    grid-template-areas:
+        "contentarea";
+    grid-template-rows: auto;
+}
+
+header {
+    display: none;
+}
+
+main {
+    grid-area: contentarea;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    display: none;
+}
+
+.mainContainer {
+    padding: 25px;
+    display: grid;
+    grid-template-areas:
+        "maintop"
+        "mainmitte"
+        "mainbottom";
+    grid-template-rows: 2.5fr 5fr 1.5fr;
+    gap: 10px;
+
+    min-width: 200px;
+    min-height: 200px;
+    width: 100%;
+    height: 100%;
+    background: lightgray;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+.maintop {
+    grid-area: maintop;
+    border: thin solid rgb(189, 186, 186);
+}
+
+.mainmitte {
+    grid-area: mainmitte;
+}
+
+.mainbottom {
+    grid-area: mainbottom;
+}
+
+.mainMitteConteiner {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.mainMitteConteiner div:nth-child(14) {
+    grid-column: 2/span 2;
+}
+
+.buttonClass {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    background: #FD841F;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.buttonClass:active {
+    transform: scale(.96);
+}
+
+.mainMitteConteiner div:nth-child(4n) button {
+    background: #FFCB42;
+}
+
+.maintop {
+    border-radius: 10px;
+}
+
+.mainTopContainer {
+    background: whitesmoke;
+    color: #666;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    /* font-size: 24px; */
+    font-size: 28px;
+    font-weight: 600;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.mainBottomContainer {
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.mainBottomContainer div:nth-child(1) {
+    margin-right: 10px;
+}
+
+.gleich,
+.neu {
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    border-radius: 10px;
+    border: thin solid rgb(189, 186, 186);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.neu:active {
+    transform: scale(.96);
+}
+
+.gleich:active {
+    transform: scale(.96);
+}
+
+.neu {
+    background: #579BB1;
+}
+
+.gleich {
+    background: #3FA796;
+}

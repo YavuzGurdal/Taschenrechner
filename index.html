@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taschenrechner App</title>
+    <link rel="stylesheet" href="styles/desktop.css">
+    <link rel="stylesheet" media="screen and (max-width:500px)" href="styles/mobile.css">
+</head>
+
+<body>
+    <header>Taschenrechner App</header>
+    <main>
+        <div class="mainContainer">
+            <div class="maintop">
+                <div class="mainTopContainer"></div>
+                <!-- <div class="mainTopContainer screen">
+                123 x 4 = 492
+            </div> -->
+            </div>
+            <div class="mainmitte">
+                <div class="mainMitteConteiner">
+                    <div class="box">
+                        <button onClick=getValue(this) data-number class="buttonClass">7</button>
+                    </div>
+                    <div class="box">
+                        <button onClick=getValue(this) class="buttonClass">8</button>
+                    </div>
+                    <div class="box">
+                        <button onClick=getValue(this) class="buttonClass">9</button>
+                    </div>
+                    <div class="box">
+                        <button onClick=getOperator(this) class="buttonClass">:</button>
+                    </div>
+                    <div class="box">
+                        <button onClick=getValue(this) class="buttonClass">4</button>
+                    </div>
+                    <div class="box">
+                        <button onClick=getValue(this) class="buttonClass">5</button>
+                    </div>
+                    <div class="box">
+                        <button onClick=getValue(this) class="buttonClass">6</button>
+                    </div>
+                    <div class="box">
+                        <button onClick=getOperator(this) class="buttonClass">x</button>
+                    </div>
+                    <div class="box">
+                        <button onClick=getValue(this) class="buttonClass">1</button>
+                    </div>
+                    <div class="box">
+                        <button onClick=getValue(this) class="buttonClass">2</button>
+                    </div>
+                    <div class="box">
+                        <button onClick=getValue(this) class="buttonClass">3</button>
+                    </div>
+                    <div class="box">
+                        <button onClick=getOperator(this) class="buttonClass">+</button>
+                    </div>
+                    <div class="box">
+                        <button onClick=getValue(this) class="buttonClass">0</button>
+                    </div>
+                    <div class="box">
+                        <button onClick=getValue(this) class="buttonClass">,</button>
+                    </div>
+                    <div class="box">
+                        <button onClick=getOperator(this) class="buttonClass" style="background: #FFCB42;">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mainbottom">
+                <div class="mainBottomContainer">
+                    <div onclick=deleteAll() class="neu">neu</div>
+                    <div onclick=calculate() class="gleich">=</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>Copyright © Yavuz Gurdal 2023 All Rights Reserved</footer>
+
+    <script src="aktionen.js">
+        window.onload = () => {
+            deleteAll()
+        }
+    </script>
+</body>
+
+</html>

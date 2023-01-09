@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+html {
+    background: #82AAE3;
+}
+
+body {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 18px;
+    line-height: 20px;
+
+    display: grid;
+    grid-template-areas:
+        "headerarea"
+        "contentarea"
+        "footerarea";
+    grid-template-rows: 100px auto 100px;
+}
+
+header {
+    grid-area: headerarea;
+    background: #91D8E4;
+    border-bottom: 2px solid #144272;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 600;
+    /* color: rgb(93, 91, 91); */
+    color: #144272;
+
+}
+
+main {
+    grid-area: contentarea;
+    /* min-height: calc(100vh - 244px); */
+    min-height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    grid-area: footerarea;
+    background: #91D8E4;
+    border-top: 2px solid #144272;
+    padding: 0 8%;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    /* color: rgb(93, 91, 91); */
+    color: #144272;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* main { */
+.mainContainer {
+    margin: 20px auto;
+    padding: 30px;
+    display: grid;
+    grid-template-areas:
+        "maintop"
+        "mainmitte"
+        "mainbottom";
+    grid-template-rows: 3fr 6fr 2fr;
+    gap: 10px;
+
+    min-width: 450px;
+    min-height: 600px;
+    background: lightgray;
+    border-radius: 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.maintop {
+    grid-area: maintop;
+    border: thin solid rgb(189, 186, 186);
+}
+
+.mainmitte {
+    grid-area: mainmitte;
+    /* border: 1px solid black; */
+}
+
+.mainbottom {
+    grid-area: mainbottom;
+    /* border: 1px solid black; */
+}
+
+.mainMitteConteiner {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+}
+
+.mainMitteConteiner div:nth-child(14) {
+    grid-column: 2/span 2;
+}
+
+.buttonClass {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    background: #FD841F;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.buttonClass:active {
+    transform: scale(.96);
+}
+
+.mainMitteConteiner div:nth-child(4n) button {
+    background: #FFCB42;
+}
+
+.maintop {
+    border-radius: 10px;
+}
+
+.mainTopContainer {
+    background: whitesmoke;
+    color: #666;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    font-size: 28px;
+    font-weight: 600;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.mainBottomContainer {
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.mainBottomContainer div:nth-child(1) {
+    margin-right: 10px;
+}
+
+.gleich,
+.neu {
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    border-radius: 10px;
+    /* border: thin solid black; */
+    border: thin solid rgb(189, 186, 186);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.neu:active {
+    transform: scale(.96);
+}
+
+.gleich:active {
+    transform: scale(.96);
+}
+
+.neu {
+    background: #579BB1;
+}
+
+.gleich {
+    background: #3FA796;
+}
